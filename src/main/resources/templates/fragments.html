@@ -31,27 +31,27 @@
         <table class = "job-listing">
             <tr>
                 <td>ID</td>
-                <td th:text = ${item.getId}></td>
+                <td th:text = ${item.id}></td>
             </tr>
             <tr>
                 <td>Name</td>
-                <td th:text = ${item.getName}><td>
+                <td th:text = ${item.name}></td>
             </tr>
             <tr>
                 <td>Employer</td>
-                <td th:text = ${item.getEmployer.toString}><td>
+                <td th:text = ${item.employer}></td>
             </tr>
             <tr>
                 <td>Location</td>
-                <td th:text = ${item.getLocation.toString}><td>
+                <td th:text = ${item.location}></td>
             </tr>
             <tr>
                 <td>Position Type</td>
-                <td th:text = ${item.getPositionType.toString}><td>
+                <td th:text = ${item.positionType}></td>
             </tr>
             <tr>
                 <td>Skill</td>
-                <td th:text = ${item.getCoreCompetency.toString}><td>
+                <td th:text = ${item.coreCompetency}></td>
             </tr>
         </table>
     </th:block>
