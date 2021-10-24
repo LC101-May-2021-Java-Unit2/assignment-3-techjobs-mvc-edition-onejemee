@@ -26,6 +26,35 @@
             </div>
         </div>
     </div>
-
+    <div th:fragment = "jobDisplay">
+    <th:block th:each = "item: ${jobs}">
+        <table class = "job-listing">
+            <tr>
+                <td>ID</td>
+                <td th:text = ${item.getId}></td>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td th:text = ${item.getName}><td>
+            </tr>
+            <tr>
+                <td>Employer</td>
+                <td th:text = ${item.getEmployer.toString}><td>
+            </tr>
+            <tr>
+                <td>Location</td>
+                <td th:text = ${item.getLocation.toString}><td>
+            </tr>
+            <tr>
+                <td>Position Type</td>
+                <td th:text = ${item.getPositionType.toString}><td>
+            </tr>
+            <tr>
+                <td>Skill</td>
+                <td th:text = ${item.getCoreCompetency.toString}><td>
+            </tr>
+        </table>
+    </th:block>
+    </div>
 </body>
 </html>
